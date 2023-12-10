@@ -18,6 +18,7 @@
             }
         }
 
+
         body {
             font-family: 'Tangerine', serif;
             background-color: #ffffff;
@@ -26,15 +27,26 @@
             padding: 0;
             background-image: url(stunning-leaves-wallpaper-1.jpg);
             animation: slideInTop 1s ease-out;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
         }
+
+
 
 
         header {
             background-image: url(minimalism-green-leafed-illustration-wallpaper.jpg);
             color: #fff;
             padding: 40px 20px; /* Adjusted padding to control the position of h1 */
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position:center;
             
         }
+
+
 
 
         header h1 {
@@ -44,23 +56,35 @@
         }
 
 
+
+
         .container {
-            width: 800px;
+            width:1050px;
+            max: width 100%;
+            height:220px;
             margin: 20px auto;
             padding: 50px;
             background-color: #292929;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-       
-        .container.first{
-           
+
+
+        .container:last-of-type {
+            height:1800px;
+            width:1150px;
         }
-         
+       
+        .first.container {
+            padding: 100px;
+            background-color: #292929;
+        }
+       
         h1{
             color: #fff;
-            
+           
         }
+
 
         h2 {
             /* Removed absolute positioning */
@@ -69,27 +93,34 @@
             color: #fff;
         }
 
+
         p{
             color: #fff;
-            font-size: 24px;
+            font-size: 30px;
         }
 
-        .container:last-child h1 {
-            font-size: 48px; 
-            margin-top: -36px;
-            margin-left: -700px; 
+
+        .first.container h2{
+            position:relative;
+            top:-100px;
+            right:250px;
+            font-size: 36px;
         }
-        
+
+
+       
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
         }
 
+
         li {
             display: inline-block;
             margin-right: 10px;
         }
+
 
         li a {
             text-decoration: none;
@@ -97,13 +128,45 @@
             padding: 5px 10px;
             border: 1px solid #fff;
             border-radius: 5px;
+            display: inline-block; 
+            transition: transform 0.3s ease-in-out;
+            position:relative;
+            top:-10px;
         }
+
 
         li a:hover {
             background-color: #fff;
             color: #333;
-            transform: scale(1.1); /* Adjust the magnification factor as needed */
+            transform: scale(1.2); /* Adjust the magnification factor as needed */
         }
+
+
+        .text-box {
+            width: 450px;
+            height: 330px;
+            border: 1px solid #cccccc00;
+            overflow: auto;
+            padding: 10px;
+            margin-left:-70px;
+            margin-top:10px;
+        }
+
+
+        .text-box:first-of-type{
+            position:relative;
+            top:-120px;
+        }
+        .container:nth-last-child(1) img{
+            position:relative;
+            width:400px;
+            height:300px;
+            margin:10px;
+            pading:10px;
+        }
+
+
+       
     </style>
 </head>
 <body>
@@ -119,22 +182,60 @@
         </nav>
     </header>
 
-    
+
+   
+
+
+    <div class="first container">
+        <h2 style="left:-320px; top:-80px;">What is EverZip?</h2>
+        <div class="text-box" style="left:50px;">
+            <p>These are just a few ways that one might use the random sentence generator for their benefit. If you're not sure if it will help in the way you want, the best course of action is to try it and see. Have several random sentences generated and you'll soon be able to see if they can help with your project.
+
+
+                Our goal is to make this tool as useful as possible. Please contact us so we can consider adding your ideas to make the random sentence generator the best it can be.
+            </p>
+           
+        </div>
+        <video src=""  style="border: 6px solid #ffffff; position:relative; width:457px; height:350px; top:-510px; left:280px;;"></video>
+
+
+    </div>
+
 
     <div class="container">
-        <h2>About Us</h2>
-       
+        <img src="" alt="" style="border: 4px solid #ffffff; position:relative; right:10px;">
+        <img src="" alt="" style="border: 4px solid #ffffff; position:relative; width:600px;">
+        <img src="" alt="" style="border: 4px solid #ffffff; position:relative; right:20px; width:300px; height:750px;">
+        <img src="" alt="" style="border: 4px solid #ffffff; position:relative; right:10px;">
+        <img src="" alt="" style="border: 4px solid #ffffff; position:relative; left:10px;width:250px;">
+        <img src="" alt="" style="border: 4px solid #ffffff; position:relative; bottom:775px; left:720px;width:330px; height:400px;">
+        <img src="" alt="" style="border: 4px solid #ffffff; position:relative; width:705px; bottom:90px; right:10px;">
+        <img src="" alt="" style="border: 4px solid #ffffff; width:300px; bottom:418px; right:375px;">
+
+
+
+
+        <div class="text-box" style="border: 4px solid #ffffff; position:relative; left:465px; top:-1530px; height:400px; width:300px;">
+            <h3 style="color:#fff; font: size 30px;">Specifications</h3>
+            <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+        </div>
+        
+        <div class="text-box" style="border: 4px solid #ffffff; position:relative; left:115px; top:-830px; height:200px; width:1030px;">
+            <h3 style="color:#fff; font: size 30px;">Other Boring Info</h3>
+            <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+        </div>
+
     </div>
+
+    
    
-    <div class="container">
-        <p>Our mission is to create eco-friendly, plant-based resealable bags that reduce plastic waste and promote a greener world.</p>
-       
-    </div>
-    <div class="container">
-        <h1>Initiatives</h1>
-       
-    </div>
+   
 </body>
 </html>
+
+
+
+
+
 
 
